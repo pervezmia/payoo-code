@@ -48,7 +48,7 @@
             </div>
             <div class="right">
 
-                <a href="./index.html" class="btn btn-soft"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="./index.html" class="btn btn-soft text-neutral/50"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     Logout</a>
             </div>
         </section>
@@ -81,7 +81,7 @@
                     <img src="./assets/opt-5.png" alt="">
                     <p>Pay Bill</p>
                 </button>
-                <button class="btn flex-col h-full py-[20px] btn-primary btn-soft">
+                <button onclick="showOnly('history')" class="btn flex-col h-full py-[20px] btn-primary btn-soft">
                     <img src="./assets/opt-6.png" alt="">
                     <p>Transactions</p>
                 </button>
@@ -150,6 +150,13 @@
                 </div>
             </div>
         </section>
+        <!-- History section added -->
+         <section id="history" class="w-11/12 mx-auto py-5 hidden">
+            <h2 class="text-2xl font-bold mb-5">Transactions</h2>
+            <div class="space-y-4" id="history-container">
+                
+            </div>
+         </section>
     </main>
 
 

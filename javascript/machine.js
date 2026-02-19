@@ -28,6 +28,7 @@ function setBalance (value){
 function showOnly (id){
     const cashout = document.getElementById('cashout');
     const addMoney = document.getElementById('add-money-section');
+    const transaction = document.getElementById("history");
     // console.log(`${cashout} 
     //     ${addMoney}`);
     
@@ -35,6 +36,7 @@ function showOnly (id){
     //sobai k hide koro
     addMoney.classList.add("hidden");
     cashout.classList.add("hidden");
+    transaction.classList.add("hidden");
 
 
     //id wala element ta ke tumi show koro
