@@ -18,7 +18,7 @@ lgBtn.addEventListener('click', function () {
         // condition true
         alert("login succeed");
         //window.location.replace("/home.html")
-        window.location.assign("../home.html");
+        window.location.assign("/payoo-code/home.html");
     } else {
         // condition false
         alert("login failed");
