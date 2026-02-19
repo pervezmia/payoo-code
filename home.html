@@ -75,11 +75,11 @@
                     <img src="./assets/opt-3.png" alt="">
                     <p>Transfer Money</p>
                 </button>
-                <button class="btn flex-col h-full py-[20px] btn-primary btn-soft">
+                <button onclick="showOnly('get-coupon')" class="btn flex-col h-full py-[20px] btn-primary btn-soft">
                     <img src="./assets/opt-4.png" alt="">
                     <p>Get Bonus</p>
                 </button>
-                <button class="btn flex-col h-full py-[20px] btn-primary btn-soft">
+                <button onclick="showOnly('pay-Bil')" class="btn flex-col h-full py-[20px] btn-primary btn-soft">
                     <img src="./assets/opt-5.png" alt="">
                     <p>Pay Bill</p>
                 </button>
@@ -179,6 +179,59 @@
                 </div>
             </div>
         </section>
+
+        <!-- Get Bonus -->
+         <section id="get-coupon" class="w-11/12 mx-auto py-5 hidden">
+            <h2 class="text-2xl font-bold mb-5">Get Bonus</h2>
+            <div class="card bg-base-100 w-full shadow rounded-[24px]">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label for="" class="label font-bold neutral">Amount</label>
+                        <input id="coupon" maxlength="4" minlength="4" class="input rounded-full w-full bg-base-200" type="text"
+                            placeholder="Enter your coupon">
+
+                        <button id="coupon-btn" class="btn btn-primary mt-4 rounded-full">Get Bonus</button>
+                    </fieldset>
+                </div>
+            </div>
+         </section>
+
+         <!-- Pay Bill -->
+          <section id="pay-Bil" class="w-11/12 mx-auto py-5 hidden">
+            <h2 class="text-2xl font-bold mb-5">Transfer Money</h2>
+            <div class="card bg-base-100 w-full shadow rounded-[24px]">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label font-bold neutral">Select To Pay</label>
+                        <select id="pay-money-bill" class="select w-full rounded-full bg-base-200">
+                            <option disabled selected>Select back</option>
+                            <option value="Electricity">Electricity</Electricityoption>
+                            <option value="Gas">Gas</option>
+                            <option value="Water">Water</option>
+                            <option value="Internet">Internet</option>
+                        </select>
+                        <br>
+
+                        <label class="label font-bold neutral">Biller Account Number</label>
+                        <input id="pay-number" maxlength="11" minlength="11" type="text"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter account number" />
+                        <br>
+                        <label for="" class="label font-bold neutral">Amount to Pay</label>
+                        <input id="pay-amount" class="input rounded-full w-full bg-base-200" type="number"
+                            placeholder="Add Amount to pay">
+                        <br>
+
+                        <label class="label font-bold neutral">Pin Number</label>
+                        <input id="pay-pin" type="password" maxlength="4"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter 4 digit pin number" />
+                        <br>
+
+                        <button id="pay-btn" class="btn btn-primary mt-4 rounded-full">Pay Now</button>
+                    </fieldset>
+                </div>
+            </div>
+          </section>
+
         <!-- History section added -->
         <section id="history" class="w-11/12 mx-auto py-5 hidden">
             <h2 class="text-2xl font-bold mb-5">Transactions</h2>
@@ -189,10 +242,12 @@
     </main>
 
 
-    <script src="javascript/machine.js"></script>
-    <script src="javascript/addMoney.js"></script>
+    <script src="./javascript/machine.js"></script>
+    <script src="./javascript/addMoney.js"></script>
     <script src="./javascript/cashout.js"></script>
-    <script src="javascript/transfer.js"></script>
+    <script src="./javascript/transfer.js"></script>
+    <script src="./javascript/coupon.js"></script>
+    <script src="./javascript/payBill.js"></script>
 
 </body>
 

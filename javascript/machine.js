@@ -29,6 +29,8 @@ function showOnly (id){
     const cashout = document.getElementById('cashout');
     const addMoney = document.getElementById('add-money-section');
     const transaction = document.getElementById("transfer-Money");
+    const getBonus = document.getElementById("get-coupon");
+    const payBill = document.getElementById("pay-Bil");
     // console.log(`${cashout} 
     //     ${addMoney}`);
     
@@ -37,6 +39,8 @@ function showOnly (id){
     addMoney.classList.add("hidden");
     cashout.classList.add("hidden");
     transaction.classList.add("hidden");
+    getBonus.classList.add("hidden");
+    payBill.classList.add("hidden");
 
 
     //id wala element ta ke tumi show koro
