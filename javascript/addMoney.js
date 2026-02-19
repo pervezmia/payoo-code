@@ -31,7 +31,7 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
     const pin = getValueFromInput("add-money-pin");
 
     if (pin === "1234") {
-        alert(`add amount successfully from ${bank} and time ${Date()}`)
+        alert(`add amount successfully from ${bank} and time ${Date()}`);
         setBalance(newBalance);
 
         //1- history-container ke dhore niye asbo
