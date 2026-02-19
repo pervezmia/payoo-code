@@ -1,24 +1,43 @@
-//machine ->input value
+//machine-1. ->input value
 function getValueFromInput(id) {
     const input = document.getElementById(id);
     const value = input.value;
-    // console.log(id, value);
+    console.log(id, value);
     return value;
     
 }
 
 
-//machine ->balance
+//machine-2. ->balance
 function getBalance (){
     const balanceElement = document.getElementById("balance");
     const balance = balanceElement.innerText;
-    console.log(balance);
+    // console.log(balance);
     return Number(balance);
 
 }
 
-//machine value -> set balance
+//machine value-3. -> set balance
 function setBalance (value){
     const balanceElement = document.getElementById("balance");
     balanceElement.innerText = value;
+}
+
+//machine value-4 -> hidden all show only
+
+function showOnly (id){
+    const cashout = document.getElementById('cashout');
+    const addMoney = document.getElementById('add-money-section');
+    // console.log(`${cashout} 
+    //     ${addMoney}`);
+    
+
+    //sobai k hide koro
+    addMoney.classList.add("hidden");
+    cashout.classList.add("hidden");
+
+
+    //id wala element ta ke tumi show koro
+    const selected = document.getElementById(id);
+    selected.classList.remove("hidden");
 }
