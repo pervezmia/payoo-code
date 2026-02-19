@@ -28,7 +28,7 @@ function setBalance (value){
 function showOnly (id){
     const cashout = document.getElementById('cashout');
     const addMoney = document.getElementById('add-money-section');
-    const transaction = document.getElementById("history");
+    const transaction = document.getElementById("transfer-Money");
     // console.log(`${cashout} 
     //     ${addMoney}`);
     

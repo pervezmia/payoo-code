@@ -48,7 +48,8 @@
             </div>
             <div class="right">
 
-                <a href="./index.html" class="btn btn-soft text-neutral/50"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="./index.html" class="btn btn-soft text-neutral/50"> <i
+                        class="fa-solid fa-arrow-right-from-bracket"></i>
                     Logout</a>
             </div>
         </section>
@@ -61,7 +62,8 @@
                 and </p>
 
             <div class="buttons grid grid-cols-3 gap-3">
-                <button onclick="showOnly('add-money-section')" class="btn flex-col h-full py-[20px] btn-primary btn-soft">
+                <button onclick="showOnly('add-money-section')"
+                    class="btn flex-col h-full py-[20px] btn-primary btn-soft">
                     <img src="./assets/opt-1.png" alt="">
                     <p>Add Money</p>
                 </button>
@@ -69,7 +71,7 @@
                     <img src="./assets/opt-2.png" alt="">
                     <p>Cashout</p>
                 </button>
-                <button class="btn flex-col h-full py-[20px] btn-primary btn-soft">
+                <button onclick="showOnly('transfer-Money')" class="btn flex-col h-full py-[20px] btn-primary btn-soft">
                     <img src="./assets/opt-3.png" alt="">
                     <p>Transfer Money</p>
                 </button>
@@ -114,8 +116,8 @@
                         <br>
 
                         <label class="label font-bold neutral">Pin Number</label>
-                        <input id="add-money-pin" type="password" maxlength="4" class="input rounded-full w-full bg-base-200"
-                            placeholder="Enter 4 digit pin number" />
+                        <input id="add-money-pin" type="password" maxlength="4"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter 4 digit pin number" />
                         <br>
 
                         <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
@@ -141,8 +143,8 @@
                         <br>
 
                         <label class="label font-bold neutral">Pin Number</label>
-                        <input id="cashout-pin" type="password" maxlength="4" class="input rounded-full w-full bg-base-200"
-                            placeholder="Enter 4 digit pin number" />
+                        <input id="cashout-pin" type="password" maxlength="4"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter 4 digit pin number" />
                         <br>
 
                         <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
@@ -150,22 +152,47 @@
                 </div>
             </div>
         </section>
+
+        <!-- Transfer Money -->
+        <section id="transfer-Money" class="w-11/12 mx-auto py-5 hidden">
+            <h2 class="text-2xl font-bold mb-5">Transfer Money</h2>
+            <div class="card bg-base-100 w-full shadow rounded-[24px]">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+
+                        <label class="label font-bold neutral">User Account Number</label>
+                        <input id="transfer-number" maxlength="11" minlength="11" type="text"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter 11 digit number" />
+                        <br>
+                        <label for="" class="label font-bold neutral">Amount</label>
+                        <input id="transfer-amount" class="input rounded-full w-full bg-base-200" type="number"
+                            placeholder="Enter amount to withdraw">
+                        <br>
+
+                        <label class="label font-bold neutral">Pin Number</label>
+                        <input id="transfer-pin" type="password" maxlength="4"
+                            class="input rounded-full w-full bg-base-200" placeholder="Enter 4 digit pin number" />
+                        <br>
+
+                        <button id="transfer-btn" class="btn btn-primary mt-4 rounded-full">Send Now</button>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
         <!-- History section added -->
-         <section id="history" class="w-11/12 mx-auto py-5 hidden">
+        <section id="history" class="w-11/12 mx-auto py-5 hidden">
             <h2 class="text-2xl font-bold mb-5">Transactions</h2>
             <div class="space-y-4" id="history-container">
-                
-            </div>
-         </section>
-    </main>
 
+            </div>
+        </section>
+    </main>
 
 
     <script src="javascript/machine.js"></script>
     <script src="javascript/addMoney.js"></script>
-    <script src="./javascript/cashout.js">
-
-    </script>
+    <script src="./javascript/cashout.js"></script>
+    <script src="javascript/transfer.js"></script>
 
 </body>
 
