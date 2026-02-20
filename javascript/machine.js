@@ -31,6 +31,7 @@ function showOnly (id){
     const transaction = document.getElementById("transfer-Money");
     const getBonus = document.getElementById("get-coupon");
     const payBill = document.getElementById("pay-Bil");
+    const history = document.getElementById("history");
     // console.log(`${cashout} 
     //     ${addMoney}`);
     
@@ -41,6 +42,7 @@ function showOnly (id){
     transaction.classList.add("hidden");
     getBonus.classList.add("hidden");
     payBill.classList.add("hidden");
+    history.classList.add("hidden");
 
 
     //id wala element ta ke tumi show koro
